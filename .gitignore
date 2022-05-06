@@ -1,0 +1,23 @@
+
+.cache/
+coverage/
+dist/
+node_modules/
+*.log
+*.iml
+.env
+
+# IDE files
+/.idea
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+cypress/integration/examples
+cypress/screenshots
+cypress/videos

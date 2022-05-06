@@ -1,0 +1,23 @@
+{
+  "name": "cypress-token",
+  "version": "1.0.0",
+  "description": "Get appointment with script :-)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress open  --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zawmyolatt/cypress-token.git"
+  },
+  "author": "Zaw Myo Latt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zawmyolatt/cypress-token/issues"
+  },
+  "homepage": "https://github.com/zawmyolatt/cypress-token#readme",
+  "devDependencies": {
+    "cypress": "^9.6.0"
+  }
+}

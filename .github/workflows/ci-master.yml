@@ -1,0 +1,35 @@
+name: CI - Main
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    container:
+      image: cypress/browsers:node14.15.0-chrome96-ff94
+    strategy:
+      fail-fast: false
+      matrix:
+        spec: ['appoitment-booking','appoitment-booking','appoitment-booking']
+    steps:
+      - name: Run cypress
+        uses: cypress-io/github-action@v2
+        # env:
+        #   DEBUG: 'cypress:*'
+        with:
+          spec: cypress/integration/${{ matrix.spec }}.spec.ts
+          config: baseUrl=${{ secrets.baseUrl }}
+          browser: chrome
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: cypress-${{ matrix.spec }}
+          retention-days: 1
+          path: |
+            cypress/screenshots/
+            cypress/videos/

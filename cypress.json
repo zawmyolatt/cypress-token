@@ -1,0 +1,21 @@
+{
+    "baseUrl": "http://localhost:8080",
+    "chromeWebSecurity": false,
+    "videoUploadOnPasses": false,
+    "defaultCommandTimeout": 1000,
+    "env": {
+        "name": "Mg Mg",
+        "gender": "M",
+        "sgIC": "G1111111T",
+        "passType": "SP",
+        "dateOfBirth": "1993-01-01",
+        "email": "youremail@gmail.com",
+        "placeOfBirth": "YANGON",
+        "passportNo": "MD11211",
+        "sgAddress": "BLK 0, Test building, #16-506 Singapore 111111",
+        "passportIssueDate": "2015-05-26",
+        "sgPhone": "+6587878787",
+        "nricNo": "12/ MAKATA(N)000000",
+        "mmAddress": "No. 007, Test Street, 1 floor, Mingalar Taung Nyunt, Yangon, Myanmar."
+    }
+}
