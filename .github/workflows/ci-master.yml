@@ -23,7 +23,7 @@ jobs:
         # env:
         #   DEBUG: 'cypress:*'
         with:
-          spec: cypress/integration/${{ matrix.spec }}.spec.ts
+          spec: ../cypress/integration/${{ matrix.spec }}.spec.ts
           config: baseUrl=${{ secrets.baseUrl }}
           browser: chrome
       - name: Upload test results
