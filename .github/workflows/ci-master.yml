@@ -37,7 +37,7 @@ jobs:
         uses: cypress-io/github-action@v2
         env:
           email: ${{ secrets.email }}
-          DEBUG: 'cypress:*'
+          # DEBUG: 'cypress:*'
         with:
           spec: cypress/integration/${{ matrix.spec }}.spec.js
           config: baseUrl=${{ secrets.baseUrl }}
