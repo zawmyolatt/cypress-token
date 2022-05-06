@@ -3,6 +3,7 @@
     "chromeWebSecurity": false,
     "videoUploadOnPasses": false,
     "defaultCommandTimeout": 1000,
+    "retries": 10,
     "env": {
         "name": "Mg Mg",
         "gender": "M",

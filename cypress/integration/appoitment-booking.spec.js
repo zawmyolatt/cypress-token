@@ -21,6 +21,9 @@ context('Appoitment Booking', () => {
                 cy.get('[data-handler="selectDay"] a:last').click();
             }
         });
+
+        // focus out from datepicker
+        cy.get('body').click();
         
         cy.get(getFullId('cboServiceType')).select('1');
 
