@@ -16,7 +16,9 @@ jobs:
       matrix:
         spec: ['appoitment-booking','appoitment-booking','appoitment-booking']
     steps:
-      - name: Run cypress
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
         uses: cypress-io/github-action@v2
         # env:
         #   DEBUG: 'cypress:*'
