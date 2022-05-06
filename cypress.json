@@ -1,9 +1,10 @@
 {
     "baseUrl": "http://localhost:8080",
     "chromeWebSecurity": false,
+    "video": false,
     "videoUploadOnPasses": false,
     "defaultCommandTimeout": 1000,
-    "retries": 500,
+    "retries": 10,
     "env": {
         "name": "Mg Mg",
         "gender": "M",
