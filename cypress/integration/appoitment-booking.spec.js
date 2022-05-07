@@ -14,11 +14,19 @@ context('Appoitment Booking', () => {
 
         cy.get(getFullId('txtAppointmentDate')).click({ force: true });
         cy.get('.ui-datepicker-calendar > tbody > tr > td').then(($tbody) => {
+            // try first month
             if ($tbody.find('a').length) {
                 cy.get('[data-handler="selectDay"] a:last').click();
             } else {
                 cy.get('.ui-datepicker-next').click();
-                cy.get('[data-handler="selectDay"] a:last').click();
+                // try second month
+                if ($tbody.find('a').length) {
+                    cy.get('[data-handler="selectDay"] a:last').click();
+                } else {
+                    cy.get('.ui-datepicker-next').click();
+                    // try third month
+                    cy.get('[data-handler="selectDay"] a:last').click();
+                }
             }
         });
 
