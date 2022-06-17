@@ -7,9 +7,9 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
-  schedule:
-    - cron: '58 4 * * 5' # runing time take 30 mins for 500 retries
-    - cron: '30 5 * * 5'
+  # schedule:
+    # - cron: '58 4 * * 5' # runing time take 30 mins for 500 retries
+    # - cron: '30 5 * * 5'
     # - cron: '35 5 * * 5'
     # - cron: '40 5 * * 5'
     # - cron: '45 5 * * 5'
